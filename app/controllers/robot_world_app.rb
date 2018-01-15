@@ -7,4 +7,3 @@ class RobotWorldApp < Sinatra::Base
     erb :index
   end
 end
-
