@@ -1,0 +1,12 @@
+<h2> Poop </h2>
+
+<form action="/robots/<%= @robot.id %>" method="post">
+        <p>Edit Merchant</p>
+        <input type='text' name='robot[name]' class="input" class="input" value="<%= @robot.name %>"/><br/>
+        <input type='text' name='robot[city]' class="input" class="input" value="<%= @robot.city %>"/><br/>
+        <input type='text' name='robot[state]' class="input" class="input" value="<%= @robot.state %>"/><br/>
+        <input type='text' name='robot[department]' class="input" class="input" value="<%= @robot.department %>"/><br/>
+
+        <input type="hidden" name='robot[updated_at]' class="input" style="width: 300px;" class="input" value="<%= Time.now %>"/><br/>
+        <input type='submit'/>
+        </form>
