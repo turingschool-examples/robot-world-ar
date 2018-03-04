@@ -1,0 +1,9 @@
+<h1>My Robots</h1>
+<a href="/robots/new">Create a New Robot</a>
+<% @robots.each do |robot| %>
+<p><a href="/robots/<%= robot.id %>/show">View Robot</a></p>
+Name :  <%= robot.name %><br>
+City :  <%= robot.city %><br>
+State :  <%= robot.state %><br>
+Department :  <%= robot.department %><br>
+ <% end %>
