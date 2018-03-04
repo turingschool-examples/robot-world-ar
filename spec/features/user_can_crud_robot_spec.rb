@@ -4,7 +4,7 @@ describe "when a user visits robot index" do
   it "they see all robots" do
     robot = Robot.create(name: "Botty McBotson",
                         city: "Cyborg City",
-                        state: "Internetopia", 
+                        state: "Internetopia",
                         department: "Finance")
 
     visit "/robots"
