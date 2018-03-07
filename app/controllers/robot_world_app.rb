@@ -4,6 +4,11 @@ require_relative '../models/robot.rb'
 class RobotWorldApp < Sinatra::Base
   set :root, File.expand_path("..", __dir__)
 
+  get "/" do
+    @robots = Robot.all
+    erb :"dashboard"
+  end
+
   get '/robots' do
     @robots = Robot.all
     erb :"robots/index"
