@@ -1,5 +1,5 @@
 .myButton {
-	background-color:#44c767;
+	background-color:#c954ce;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
 	border-radius:28px;
@@ -44,7 +44,7 @@ body {
 
        width: 100%;
        margin: 0;
-       background-color: ;
+       background-color: #000000;
 
 
   }
@@ -121,10 +121,7 @@ table tr td {
      min-width: 160px;
      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
      z-index: 1;
-     border-top-left-radius:15px;
-     border-bottom-left-radius:15px;
-     border-top-right-radius:15px;
-     border-bottom-right-radius:15px;
+
  }
 
  .dropdown-content a {
@@ -231,6 +228,25 @@ table tr td {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 20%;
+      position: absolute;
+      margin-right: 20px;
+      background-color: #E2E2E2;
+
+
+
+}
+
+.card-2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 80px;
+    position: absolute;
+    left: 515px;
+    width: 30%;
+      background-color: #E2E2E2;
+  
+
+
 
 }
 
@@ -240,5 +256,21 @@ table tr td {
 
 .container {
     padding: 2px 16px;
-    
+
+}
+
+
+
+img {
+  background-color: #3c9cd2;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
