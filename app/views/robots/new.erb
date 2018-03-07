@@ -1,4 +1,32 @@
-  <form action="/robots" method="post">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/main.css"  type="text/css" />
+
+</head>
+<body>
+  <header>
+    <div id="wrapper" style="width:100%; text-align:center">
+      <img src="https://i.imgur.com/w76WOh2.gif" alt="banner" height="300px" align="middle" width="100%">
+    </div>
+    </header>
+    <div class="nav"  width="100px">
+  <div class="navbar">
+    <a href="/">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Robots
+        <i class="la la bub"></i>
+      </button>
+      <div class="dropdown-content" id="drop-down">
+        <a href="/robots/new">Create a New Robot</a>
+        <a href="/robots">View all robots</a>
+      </div>
+    </div>
+  </div><br>
+  <div class="card-2">
+      <div class="container">
+<form action="/robots" method="post">
     Enter a robot name: <input id="text-box" type="text" name="robot[name]"/><br/>
         Enter a city: <input id="text-box" type="text" name="robot[city]"/><br/>
         Enter a state: <input id="text-box" type="text" name="robot[state]"/><br/>
@@ -7,3 +35,8 @@
         <input type="hidden" name="robot[updated_at]" value="<%= Time.now %>"/>
         <input id="submit-button" onClick="conf()" type="submit" value="Submit"/>
       </form>
+    </div>
+  </div>
+
+    </body>
+    </html>
