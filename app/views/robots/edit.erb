@@ -27,12 +27,13 @@
   <div class="card-2">
       <div class="container">
 <form action="/robots/<%= @robot.id %>" method="post">
-        <p>Edit robot data</p>
+        <h3>Edit robot data</h3>
+        <label>
 Name :         <input type='text' name='robot[name]' id="name" class="input" class="input" value="<%= @robot.name %>"/><br/>
-City :           <input type='text' name='robot[city]' id='city' class="input" class="input" value="<%= @robot.city %>"/><br/>
+</label>
+City :         <input type='text' name='robot[city]' id='city' class="input" class="input" value="<%= @robot.city %>"/><br/>
 State :        <input type='text' name='robot[state]' id='state' class="input" class="input" value="<%= @robot.state %>"/><br/>
 Department :        <input type='text' name='robot[department]' id='department' class="input" class="input" value="<%= @robot.department %>"/><br/>
-
         <input type="hidden" name='robot[updated_at]' class="input" style="width: 300px;" class="input" value="<%= Time.now %>"/><br/>
         <input type='submit' id='submit'/>
         </form>
