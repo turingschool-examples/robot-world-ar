@@ -14,5 +14,10 @@ group :development, :test do
   gem 'launchy'
   gem 'rack-test'
   gem 'rake'
+  gem 'sqlite3'
   gem 'database_cleaner'
+end
+
+group :production do
+ gem 'pg'
 end
