@@ -5,14 +5,16 @@ describe "when a user visits robot index" do
     robot = Robot.create(name: "Botty McBotson",
                         city: "Cyborg City",
                         state: "Internetopia",
-                        department: "Finance")
+                        department: "Finance",
+                        url: "https://i.imgur.com/FThfmVB.gif")
     robot = Robot.create(name: "T-100",
                           city: "Skynet",
                           state: "Colorado",
-                          department: "Defense")
+                          department: "Defense",
+                            url: "https://i.imgur.com/FThfmVB.gif")
 
     visit "/robots"
-    save_and_open_page
+
     expect(page).to have_content("Botty McBotson")
     expect(page).to have_content("Cyborg City")
     expect(page).to have_content("Internetopia")

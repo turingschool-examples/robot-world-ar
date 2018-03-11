@@ -5,7 +5,8 @@ describe "when a user visits robot index" do
     robot = Robot.create(name: "Botty McBotson",
                         city: "Cyborg City",
                         state: "Internetopia",
-                        department: "Finance")
+                        department: "Finance",
+                          url: "https://i.imgur.com/FThfmVB.gif")
 
     visit "/robots"
 

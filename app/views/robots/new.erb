@@ -27,12 +27,22 @@
   <div class="card-2">
       <div class="container">
 <form action="/robots" method="post">
-    Enter a robot name: <input id="text-box" type="text" name="robot[name]"/><br/>
-        Enter a city: <input id="text-box" type="text" name="robot[city]"/><br/>
-        Enter a state: <input id="text-box" type="text" name="robot[state]"/><br/>
-          Enter a department: <input id="text-box" type="text" name="robot[department]"/><br/>
+    Enter a robot name: <input id='name' type="text" name="robot[name]"/><br/>
+        Enter a city: <input id='city' type="text" name="robot[city]"/><br/>
+        Enter a state: <input id='state' type="text" name="robot[state]"/><br/>
+          Enter a department: <input id='department' type="text" name="robot[department]"/><br/>
         <input type="hidden" name="robot[created_at]" value="<%= Time.now %>"/>
         <input type="hidden" name="robot[updated_at]" value="<%= Time.now %>"/>
+        <select name="robot[url]">
+          <option value="https://i.imgur.com/1u0naBC.gif" style="background-image:url(https://i.imgur.com/1u0naBC.gif);">Spider-bot</option>
+          <option value="https://i.imgur.com/Q67vIPY.gif" style="background-image:url(https://i.imgur.com/Q67vIPY.gif);">Spear-bot</option>
+          <option value="https://i.imgur.com/j4Bo7PP.gif" style="background-image:url(https://i.imgur.com/j4Bo7PP.gif);">Tanker-bot</option>
+          <option value="https://i.imgur.com/mK1Myoc.gif" style="background-image:url(https://i.imgur.com/mK1Myoc.gif);">Penchor-bot</option>
+          <option value="https://i.imgur.com/jZW5y5c.gif" style="background-image:url(https://i.imgur.com/jZW5y5c.gif);">Hov-bot</option>
+          <option value="https://i.imgur.com/lPh7eTI.gif" style="background-image:url(https://i.imgur.com/lPh7eTI.gif);">legipit-bot</option>
+          <option value="https://i.imgur.com/LD4QuUE.gif" style="background-image:url(https://i.imgur.com/LD4QuUE.gif);">Crab-bot</option>
+          <option value="https://i.imgur.com/2N1EJHA.gif" style="background-image:url(https://i.imgur.com/2N1EJHA.gif);">liftie-bot</option>
+        </select>
         <input id="submit-button" onClick="conf()" type="submit" value="Submit"/>
       </form>
     </div>
