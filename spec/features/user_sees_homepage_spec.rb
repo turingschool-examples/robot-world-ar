@@ -6,5 +6,6 @@
 
     expect(current_path).to eq("/")
     expect(page).to have_link("Enter")
+    expect(page).to have_css("img[src*='https://i.imgur.com/WgLpKaE.gif']")
   end
 end

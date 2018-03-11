@@ -27,10 +27,10 @@
   <div class="card-2">
       <div class="container">
 <form action="/robots" method="post">
-    Enter a robot name: <input id="text-box" type="text" name="robot[name]"/><br/>
-        Enter a city: <input id="text-box" type="text" name="robot[city]"/><br/>
-        Enter a state: <input id="text-box" type="text" name="robot[state]"/><br/>
-          Enter a department: <input id="text-box" type="text" name="robot[department]"/><br/>
+    Enter a robot name: <input id='name' type="text" name="robot[name]"/><br/>
+        Enter a city: <input id='city' type="text" name="robot[city]"/><br/>
+        Enter a state: <input id='state' type="text" name="robot[state]"/><br/>
+          Enter a department: <input id='department' type="text" name="robot[department]"/><br/>
         <input type="hidden" name="robot[created_at]" value="<%= Time.now %>"/>
         <input type="hidden" name="robot[updated_at]" value="<%= Time.now %>"/>
         <select name="robot[url]">
