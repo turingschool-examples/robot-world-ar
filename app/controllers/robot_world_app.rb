@@ -23,6 +23,10 @@ class RobotWorldApp < Sinatra::Base
     erb :"robots/new"
   end
 
+  get '/welcome' do
+    erb :welcome
+  end
+
   post "/robots" do
     item = Robot.new(params[:robot])
     item.save
