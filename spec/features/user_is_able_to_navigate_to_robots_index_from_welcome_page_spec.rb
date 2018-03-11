@@ -11,20 +11,6 @@
       end
     end
 
-    describe 'user is on robot index and sees dropdown to create a robot'  do
-      it 'they click on create new robot and the robot is created'  do
-
-        visit '/robots'
-
-
-       within("#drop-down") do
-       click_on("Create a New Robot")
-
-       expect(current_path).to eq('/robots/new')
-     end
-   end
- end
-
    describe 'user navigates to robots index'  do
      it 'then they are able to edit a robot'  do
        robot = Robot.create(name: "Botty McBotson",
