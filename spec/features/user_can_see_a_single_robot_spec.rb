@@ -6,7 +6,12 @@ describe "when a user visits robot index" do
                         city: "Cyborg City",
                         state: "Internetopia",
                         department: "Finance",
-                          url: "https://i.imgur.com/FThfmVB.gif")
+                        url: "https://i.imgur.com/FThfmVB.gif")
+    robot = Robot.create(name: "T-100",
+                          city: "Skynet",
+                          state: "Colorado",
+                          department: "Defense",
+                            url: "https://i.imgur.com/FThfmVB.gif")
 
     visit "/robots"
 

@@ -1,0 +1,51 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/main.css"  type="text/css" />
+</head>
+<body>
+  <header>
+    <div id="wrapper" style="width:100%; text-align:center">
+      <img src="https://i.imgur.com/w76WOh2.gif" alt="banner" height="300px" align="middle" width="100%">
+    </div>
+    </header>
+    <div class="nav"  width="100px">
+  <div class="navbar">
+    <a href="/">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Robots
+        <i class="la la bub"></i>
+      </button>
+      <div class="dropdown-content" id="drop-down">
+        <a href="/robots/new">Create a New Robot</a>
+        <a href="/robots">View all robots</a>
+      </div>
+    </div>
+  </div><br>
+  <div class="card-2">
+      <div class="container">
+<form action="/robots" method="post">
+  <h3> Enter new robot info </h3>
+    Enter a robot name: <input id='name' type="text" name="robot[name]"/><br/>
+        Enter a city: <input id='city' type="text" name="robot[city]"/><br/>
+        Enter a state: <input id='state' type="text" name="robot[state]"/><br/>
+          Enter a department: <input id='department' type="text" name="robot[department]"/><br/>
+        <input type="hidden" name="robot[created_at]" value="<%= Time.now %>"/>
+        <input type="hidden" name="robot[updated_at]" value="<%= Time.now %>"/>
+      Select robot shell:  <select name="robot[url]">
+          <option value="https://i.imgur.com/1u0naBC.gif" style="background-image:url(https://i.imgur.com/1u0naBC.gif);">Spider-bot</option>
+          <option value="https://i.imgur.com/Q67vIPY.gif" style="background-image:url(https://i.imgur.com/Q67vIPY.gif);">Spear-bot</option>
+          <option value="https://i.imgur.com/j4Bo7PP.gif" style="background-image:url(https://i.imgur.com/j4Bo7PP.gif);">Tanker-bot</option>
+          <option value="https://i.imgur.com/mK1Myoc.gif" style="background-image:url(https://i.imgur.com/mK1Myoc.gif);">Penchor-bot</option>
+          <option value="https://i.imgur.com/jZW5y5c.gif" style="background-image:url(https://i.imgur.com/jZW5y5c.gif);">Hov-bot</option>
+          <option value="https://i.imgur.com/lPh7eTI.gif" style="background-image:url(https://i.imgur.com/lPh7eTI.gif);">legipit-bot</option>
+          <option value="https://i.imgur.com/LD4QuUE.gif" style="background-image:url(https://i.imgur.com/LD4QuUE.gif);">Crab-bot</option>
+          <option value="https://i.imgur.com/2N1EJHA.gif" style="background-image:url(https://i.imgur.com/2N1EJHA.gif);">liftie-bot</option>
+        </select>
+        <input id="submit-button" onClick="conf()" type="submit" value="Submit"/>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
