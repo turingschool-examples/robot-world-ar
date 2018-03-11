@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20180304155330) do
     t.string "city"
     t.string "state"
     t.string "department"
+    t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
